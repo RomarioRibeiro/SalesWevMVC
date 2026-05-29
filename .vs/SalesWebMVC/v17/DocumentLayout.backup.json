@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\temp\\projetos C#\\SalesWebMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\controllers\\departamentoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\controllers\\departamentoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\migrations\\20260529011030_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\migrations\\20260529011030_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\data\\saleswebmvccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\data\\saleswebmvccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260529004308_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SalesWebMVC\\Migrations\\20260529004308_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DepartamentoesController.cs",
-              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\DepartamentoesController.cs",
-              "RelativeDocumentMoniker": "SalesWebMVC\\Controllers\\DepartamentoesController.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\DepartamentoesController.cs",
-              "RelativeToolTip": "SalesWebMVC\\Controllers\\DepartamentoesController.cs",
+              "Title": "20260529011030_Initial.cs",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
+              "RelativeToolTip": "SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T01:10:30.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Program.cs",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Program.cs",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Program.cs",
+              "RelativeToolTip": "SalesWebMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T00:54:06.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalesWebMVCContext.cs",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Data\\SalesWebMVCContext.cs",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Data\\SalesWebMVCContext.cs",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Data\\SalesWebMVCContext.cs",
+              "RelativeToolTip": "SalesWebMVC\\Data\\SalesWebMVCContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T00:13:38.396Z",
+              "WhenOpened": "2026-05-29T00:54:00.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "serviceDependencies.json",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Properties\\serviceDependencies.json",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Properties\\serviceDependencies.json",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Properties\\serviceDependencies.json",
+              "RelativeToolTip": "SalesWebMVC\\Properties\\serviceDependencies.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-29T00:53:49.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260529004308_Initial.cs",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260529004308_Initial.cs",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Migrations\\20260529004308_Initial.cs",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260529004308_Initial.cs",
+              "RelativeToolTip": "SalesWebMVC\\Migrations\\20260529004308_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T00:43:09.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "SalesWebMVC\\appsettings.json",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\appsettings.json",
+              "RelativeToolTip": "SalesWebMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-29T00:42:39.435Z",
               "EditorCaption": ""
             }
           ]
