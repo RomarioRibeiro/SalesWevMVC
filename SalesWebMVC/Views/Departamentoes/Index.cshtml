@@ -1,35 +1,42 @@
 ﻿@model IEnumerable<SalesWebMVC.Models.Departamento>
-
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Lista de Departamentos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Novo Departamento</a>
 </p>
+<div class="card">
+    <div class="card-body">
+
+<div class="table-responsive">
 <table class="table">
-    <thead>
+    <thead class="table-light">
         <tr>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="table-group-divider">
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td scope="row">
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            <td class="botoes">
+                    <a  asp-action="Edit" asp-route-id="@item.Id"><i class="fa fa-pen"></i></a> |
+                    <a  asp-action="Details" asp-route-id="@item.Id"><i class="fa-solid fa-circle-info"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+    </div>
+
+</div>
