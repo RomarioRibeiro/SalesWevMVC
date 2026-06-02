@@ -17,6 +17,13 @@ namespace SalesWebMVC.Services
             return _context.Vendedores.ToList();
         }
 
+        public void Insert(Vendedores vendedores)
+        {
+
+            vendedores.Departamento = _context.Departamento.First();
+            _context.Add(vendedores);
+            _context.SaveChanges();
+        }
 
     }
 }

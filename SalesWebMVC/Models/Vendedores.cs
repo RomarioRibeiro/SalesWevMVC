@@ -9,7 +9,8 @@
         public string? Email { get; set; }
         public DateTime DiaNacimento { get; set; }
         public double SalarioBase { get; set; }
-        public Departamento Departamento { get; set; }
+        public int DepartamentoId { get; set; }
+        public Departamento Departamento { get; set; } = null!;
         public ICollection<VendasRecord> Vendas { get; set; } = new List<VendasRecord>();
 
         public Vendedores()
