@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using SalesWebMVC.Models;
 using SalesWebMVC.Models.ViewModel;
 using SalesWebMVC.Services;
+using SalesWebMVC.Services.Exception;
 
 namespace SalesWebMVC.Controllers
 {
@@ -44,12 +45,12 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult Delete(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return NotFound();
             }
             var obj = _vendedoresServeice.FindById(id.Value);
-            if(obj == null)
+            if (obj == null)
             {
                 return NotFound();
             }
@@ -76,6 +77,50 @@ namespace SalesWebMVC.Controllers
                 return NotFound();
             }
             return View(obj);
+        }
+
+        public IActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var obj = _vendedoresServeice.FindById(id.Value);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            List<Departamento> departamentos = _departamentoService.FindAll();
+            VendedoresFormViewModel viewModel = new VendedoresFormViewModel { Vendedores = obj, Departamentos = departamentos };
+
+            return View(viewModel);
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, Vendedores vendedores)
+        {
+            if (id != vendedores.Id)
+            {
+                return BadRequest();
+            }
+            try
+            {
+                _vendedoresServeice.Update(vendedores);
+                return RedirectToAction(nameof(Index));
+
+            }
+            catch (NotFountException e)
+            {
+                return NotFound();
+            }
+            catch (DbConcurrencyException e)
+            {
+                return BadRequest();
+            }
         }
 
     }

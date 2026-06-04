@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
 using SalesWebMVC.Models;
+using SalesWebMVC.Services.Exception;
 
 namespace SalesWebMVC.Services
 {
@@ -19,7 +20,7 @@ namespace SalesWebMVC.Services
         }
 
         public void Insert(Vendedores vendedores)
-        {            
+        {
             _context.Add(vendedores);
             _context.SaveChanges();
         }
@@ -36,5 +37,21 @@ namespace SalesWebMVC.Services
             _context.SaveChanges();
         }
 
+        public void Update(Vendedores vendedores)
+        {
+            if (!_context.Vendedores.Any(obj => obj.Id == vendedores.Id))
+            {
+                throw new NotFountException("Id não existe");
+            }
+            try
+            {
+            _context.Update(vendedores);
+            _context.SaveChanges();
+
+            }catch (DbUpdateConcurrencyException e)
+            {
+                throw new DbConcurrencyException(e.Message);
+            }
+        }
     }
 }
