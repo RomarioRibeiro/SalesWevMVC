@@ -41,5 +41,28 @@ namespace SalesWebMVC.Controllers
             _vendedoresServeice.Insert(viewModel.Vendedores);
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Delete(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var obj = _vendedoresServeice.FindById(id.Value);
+            if(obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _vendedoresServeice.Remove(id);
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
