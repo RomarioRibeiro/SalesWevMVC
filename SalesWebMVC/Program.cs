@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
 using SalesWebMVC.Models;
 using SalesWebMVC.Services;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,12 +43,20 @@ if (app.Environment.IsDevelopment())
     }
 }
 
+var enUS = new CultureInfo("en-US");
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture(enUS),
+    SupportedCultures = new List<CultureInfo> { enUS},
+    SupportedUICultures = new List<CultureInfo> { enUS}
+};
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseRequestLocalization(localizationOptions);
 
 app.MapControllerRoute(
     name: "default",
