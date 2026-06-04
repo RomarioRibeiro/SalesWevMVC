@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\temp\\projetos C#\\SalesWebMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\views\\vendedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\views\\vendedores\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\views\\vendedores\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\views\\vendedores\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,32 +31,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\Vendedores\\Details.cshtml",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Views\\Vendedores\\Details.cshtml",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\Vendedores\\Details.cshtml",
+              "RelativeToolTip": "SalesWebMVC\\Views\\Vendedores\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-04T14:02:13.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\Vendedores\\Delete.cshtml",
               "RelativeDocumentMoniker": "SalesWebMVC\\Views\\Vendedores\\Delete.cshtml",
               "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\Vendedores\\Delete.cshtml",
               "RelativeToolTip": "SalesWebMVC\\Views\\Vendedores\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-04T13:43:54.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VendedoresController.cs",
               "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\VendedoresController.cs",
               "RelativeDocumentMoniker": "SalesWebMVC\\Controllers\\VendedoresController.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\VendedoresController.cs",
-              "RelativeToolTip": "SalesWebMVC\\Controllers\\VendedoresController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowDcAAAAdAAAAAAAAAA==",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\VendedoresController.cs*",
+              "RelativeToolTip": "SalesWebMVC\\Controllers\\VendedoresController.cs*",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwE0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-04T13:40:30.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "VendedoresServeice.cs",
               "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Services\\VendedoresServeice.cs",
               "RelativeDocumentMoniker": "SalesWebMVC\\Services\\VendedoresServeice.cs",
