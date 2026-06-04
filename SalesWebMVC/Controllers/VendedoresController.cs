@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SalesWebMVC.Models;
+using SalesWebMVC.Models.ViewModel;
 using SalesWebMVC.Services;
 
 namespace SalesWebMVC.Controllers
@@ -25,21 +26,19 @@ namespace SalesWebMVC.Controllers
         public IActionResult Create()
         {
             var listDepartamentos = _departamentoService.FindAll();
-            ViewBag.Departamentos = new SelectList(listDepartamentos, "Id", "Descricao");
-            return View();
+            var viewModel = new VendedoresFormViewModel
+            {
+                Vendedores = new Vendedores(),
+                Departamentos = listDepartamentos
+            };
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Vendedores vendedores)
+        public IActionResult Create(VendedoresFormViewModel viewModel)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    ViewBag.Departamentos = new SelectList(_departamentoService.FindAll(), "Id", "Descricao");
-            //    return View(vendedores);
-            //}
-
-            _vendedoresServeice.Insert(vendedores);
+            _vendedoresServeice.Insert(viewModel.Vendedores);
             return RedirectToAction(nameof(Index));
         }
     }
