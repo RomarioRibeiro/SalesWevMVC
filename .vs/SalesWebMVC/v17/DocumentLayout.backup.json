@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\temp\\projetos C#\\SalesWebMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260606192548_AlterDeleteBehaviorVendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SalesWebMVC\\Migrations\\20260606192548_AlterDeleteBehaviorVendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\data\\saleswebmvccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\data\\saleswebmvccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\views\\vendasrecords\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\views\\vendasrecords\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\models\\vendasrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\models\\vendasrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\migrations\\20260530163024_otherentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\migrations\\20260530163024_otherentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\migrations\\20260529011030_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\migrations\\20260529011030_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\models\\vendedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\models\\vendedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\controllers\\vendasrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|solutionrelative:saleswebmvc\\controllers\\vendasrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51B35679-11EB-456D-9D36-5684168DEDBD}|SalesWebMVC\\SalesWebMVC.csproj|c:\\temp\\projetos c#\\saleswebmvc\\saleswebmvc\\services\\vendedoresserveice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,103 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20260606192548_AlterDeleteBehaviorVendedor.cs",
-              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260606192548_AlterDeleteBehaviorVendedor.cs",
-              "RelativeDocumentMoniker": "SalesWebMVC\\Migrations\\20260606192548_AlterDeleteBehaviorVendedor.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260606192548_AlterDeleteBehaviorVendedor.cs",
-              "RelativeToolTip": "SalesWebMVC\\Migrations\\20260606192548_AlterDeleteBehaviorVendedor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T19:25:48.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20260530163024_OtherEntities.cs",
-              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260530163024_OtherEntities.cs",
-              "RelativeDocumentMoniker": "SalesWebMVC\\Migrations\\20260530163024_OtherEntities.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260530163024_OtherEntities.cs",
-              "RelativeToolTip": "SalesWebMVC\\Migrations\\20260530163024_OtherEntities.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T19:19:11.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20260529011030_Initial.cs",
-              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
-              "RelativeDocumentMoniker": "SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
-              "RelativeToolTip": "SalesWebMVC\\Migrations\\20260529011030_Initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T19:18:53.952Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SalesWebMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-06T19:41:33.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SalesWebMVCContext.cs",
-              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Data\\SalesWebMVCContext.cs",
-              "RelativeDocumentMoniker": "SalesWebMVC\\Data\\SalesWebMVCContext.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Data\\SalesWebMVCContext.cs",
-              "RelativeToolTip": "SalesWebMVC\\Data\\SalesWebMVCContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T19:13:12.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Vendedores.cs",
-              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Models\\Vendedores.cs",
-              "RelativeDocumentMoniker": "SalesWebMVC\\Models\\Vendedores.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Models\\Vendedores.cs",
-              "RelativeToolTip": "SalesWebMVC\\Models\\Vendedores.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAqwEMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T19:11:08.149Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\VendasRecords\\Index.cshtml",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Views\\VendasRecords\\Index.cshtml",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Views\\VendasRecords\\Index.cshtml",
+              "RelativeToolTip": "SalesWebMVC\\Views\\VendasRecords\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-06T19:37:09.762Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VendasRecord.cs",
-              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Models\\VendasRecord.cs",
-              "RelativeDocumentMoniker": "SalesWebMVC\\Models\\VendasRecord.cs",
-              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Models\\VendasRecord.cs",
-              "RelativeToolTip": "SalesWebMVC\\Models\\VendasRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Title": "VendasRecordsController.cs",
+              "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\VendasRecordsController.cs",
+              "RelativeDocumentMoniker": "SalesWebMVC\\Controllers\\VendasRecordsController.cs",
+              "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\VendasRecordsController.cs",
+              "RelativeToolTip": "SalesWebMVC\\Controllers\\VendasRecordsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-06T19:10:24.795Z",
+              "WhenOpened": "2026-06-06T19:35:30.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "VendedoresController.cs",
               "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\VendedoresController.cs",
               "RelativeDocumentMoniker": "SalesWebMVC\\Controllers\\VendedoresController.cs",
               "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Controllers\\VendedoresController.cs",
               "RelativeToolTip": "SalesWebMVC\\Controllers\\VendedoresController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowFEAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowFEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T18:55:47.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "VendedoresServeice.cs",
               "DocumentMoniker": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Services\\VendedoresServeice.cs",
               "RelativeDocumentMoniker": "SalesWebMVC\\Services\\VendedoresServeice.cs",
               "ToolTip": "C:\\temp\\projetos C#\\SalesWebMVC\\SalesWebMVC\\Services\\VendedoresServeice.cs",
               "RelativeToolTip": "SalesWebMVC\\Services\\VendedoresServeice.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA/wCYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA/wCoAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T18:54:12.649Z",
               "EditorCaption": ""

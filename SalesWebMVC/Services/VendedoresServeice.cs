@@ -40,7 +40,7 @@ namespace SalesWebMVC.Services
             }
             catch (DbUpdateException e)
             {
-                throw new IntegrityException($"Vendedor do codigo {id} tem vendas em atrelada a ele");
+                throw new IntegrityException($"Vendedor do codigo {id} tem vendas  atrelada a ele");
             }         
         }
 
