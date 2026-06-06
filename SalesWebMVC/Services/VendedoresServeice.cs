@@ -14,39 +14,40 @@ namespace SalesWebMVC.Services
             _context = context;
         }
 
-        public List<Vendedores> FindAll()
+        public async Task<List<Vendedores>> FindAllAsyn()
         {
-            return _context.Vendedores.ToList();
+            return await _context.Vendedores.ToListAsync();
         }
 
-        public void Insert(Vendedores vendedores)
+        public async Task InsertAsync(Vendedores vendedores)
         {
             _context.Add(vendedores);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public Vendedores FindById(int id)
+        public async Task<Vendedores> FindByIdAsync(int id)
         {
-            return _context.Vendedores.Include(obj => obj.Departamento).FirstOrDefault(obj => obj.Id == id);
+            return await _context.Vendedores.Include(obj => obj.Departamento).FirstOrDefaultAsync(obj => obj.Id == id);
         }
 
-        public void Remove(int id)
+        public async Task RemoveAsync(int id)
         {
-            var obj = _context.Vendedores.Find(id);
+            var obj = await _context.Vendedores.FindAsync(id);
             _context.Vendedores.Remove(obj);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void Update(Vendedores vendedores)
+        public async Task UpdateAsync(Vendedores vendedores)
         {
-            if (!_context.Vendedores.Any(obj => obj.Id == vendedores.Id))
+            bool isVendedor = await _context.Vendedores.AnyAsync(obj => obj.Id == vendedores.Id);
+            if (!isVendedor)
             {
                 throw new NotFountException("Id não existe");
             }
             try
             {
             _context.Update(vendedores);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             }catch (DbUpdateConcurrencyException e)
             {

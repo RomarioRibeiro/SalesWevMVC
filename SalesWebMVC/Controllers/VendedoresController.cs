@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SalesWebMVC.Models;
 using SalesWebMVC.Models.ViewModel;
@@ -19,18 +19,17 @@ namespace SalesWebMVC.Controllers
             _departamentoService = departamentoService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var list = _vendedoresServeice.FindAll();
+            var list = await _vendedoresServeice.FindAllAsyn();
             return View(list);
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            var listDepartamentos = _departamentoService.FindAll();
+            var listDepartamentos = await _departamentoService.FindAllAsync();
             var viewModel = new VendedoresFormViewModel
             {
-                Vendedores = new Vendedores(),
                 Departamentos = listDepartamentos
             };
             return View(viewModel);
@@ -38,93 +37,112 @@ namespace SalesWebMVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Vendedores vendedores)
+        public async Task<IActionResult> Create(VendedoresFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
             {
-                var departamentos = _departamentoService.FindAll();
-                var viewModel = new VendedoresFormViewModel { Vendedores = vendedores, Departamentos = departamentos };
+                viewModel.Departamentos = await _departamentoService.FindAllAsync();
                 return View(viewModel);
             }
-            _vendedoresServeice.Insert(vendedores);
+
+            var departamento = await _departamentoService.FindByIdAsync(viewModel.Vendedores.DepartamentoId);
+            if (departamento == null)
+            {
+                ModelState.AddModelError("Vendedores.DepartamentoId", "Departamento inválido");
+                viewModel.Departamentos = await _departamentoService.FindAllAsync();
+                return View(viewModel);
+            }
+
+            viewModel.Vendedores.Departamento = departamento;
+
+            await _vendedoresServeice.InsertAsync(viewModel.Vendedores);
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Delete(int? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
-                return RedirectToAction(nameof(Error), new {message = "Id veio vazio" });
+                return RedirectToAction(nameof(Error), new { message = "Id veio vazio" });
             }
-            var obj = _vendedoresServeice.FindById(id.Value);
+            var obj = await _vendedoresServeice.FindByIdAsync(id.Value);
             if (obj == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id n�o existe" });
+                return RedirectToAction(nameof(Error), new { message = "Id não existe" });
             }
             return View(obj);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            _vendedoresServeice.Remove(id);
+            await _vendedoresServeice.RemoveAsync(id);
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id veio vazio" });
             }
-            var obj = _vendedoresServeice.FindById(id.Value);
+            var obj = await _vendedoresServeice.FindByIdAsync(id.Value);
             if (obj == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id n�o existe" });
+                return RedirectToAction(nameof(Error), new { message = "Id não existe" });
             }
             return View(obj);
         }
 
-        public IActionResult Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id veio vazio" });
             }
 
-            var obj = _vendedoresServeice.FindById(id.Value);
+            var obj = await _vendedoresServeice.FindByIdAsync(id.Value);
             if (obj == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id n�o existe" });
+                return RedirectToAction(nameof(Error), new { message = "Id não existe" });
             }
 
-            List<Departamento> departamentos = _departamentoService.FindAll();
+            List<Departamento> departamentos = await _departamentoService.FindAllAsync();
             VendedoresFormViewModel viewModel = new VendedoresFormViewModel { Vendedores = obj, Departamentos = departamentos };
 
             return View(viewModel);
-
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, Vendedores vendedores)
+        public async Task<IActionResult> Edit(int id, VendedoresFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
             {
-                var departamentos = _departamentoService.FindAll();
-                var viewModel = new VendedoresFormViewModel { Vendedores = vendedores, Departamentos = departamentos };
+                viewModel.Departamentos = await _departamentoService.FindAllAsync();
                 return View(viewModel);
             }
-            if (id != vendedores.Id)
+
+            var departamento = await _departamentoService.FindByIdAsync(viewModel.Vendedores.DepartamentoId);
+            if (departamento == null)
+            {
+                ModelState.AddModelError("Vendedores.DepartamentoId", "Departamento inválido");
+                viewModel.Departamentos = await _departamentoService.FindAllAsync();
+                return View(viewModel);
+            }
+
+            viewModel.Vendedores.Departamento = departamento;
+
+            if (id != viewModel.Vendedores.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id e diferente do vendedor" });
             }
+
             try
             {
-                _vendedoresServeice.Update(vendedores);
+                await _vendedoresServeice.UpdateAsync(viewModel.Vendedores);
                 return RedirectToAction(nameof(Index));
-
             }
             catch (NotFountException e)
             {
@@ -145,6 +163,5 @@ namespace SalesWebMVC.Controllers
             };
             return View(viewModel);
         }
-
     }
 }
