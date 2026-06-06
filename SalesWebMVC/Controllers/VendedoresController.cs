@@ -38,9 +38,15 @@ namespace SalesWebMVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(VendedoresFormViewModel viewModel)
+        public IActionResult Create(Vendedores vendedores)
         {
-            _vendedoresServeice.Insert(viewModel.Vendedores);
+            if (!ModelState.IsValid)
+            {
+                var departamentos = _departamentoService.FindAll();
+                var viewModel = new VendedoresFormViewModel { Vendedores = vendedores, Departamentos = departamentos };
+                return View(viewModel);
+            }
+            _vendedoresServeice.Insert(vendedores);
             return RedirectToAction(nameof(Index));
         }
 
@@ -104,6 +110,12 @@ namespace SalesWebMVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Vendedores vendedores)
         {
+            if (!ModelState.IsValid)
+            {
+                var departamentos = _departamentoService.FindAll();
+                var viewModel = new VendedoresFormViewModel { Vendedores = vendedores, Departamentos = departamentos };
+                return View(viewModel);
+            }
             if (id != vendedores.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id e diferente do vendedor" });

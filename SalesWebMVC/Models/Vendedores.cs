@@ -7,14 +7,23 @@ namespace SalesWebMVC.Models
     
 
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "{0} é Obrigatorio")]
+        [StringLength(60, MinimumLength = 3, ErrorMessage = "{0} Tamanho  caractes e entre {2} a {1}")]
         public string? Nome { get; set; }
+        [Required(ErrorMessage = "{0} é Obrigatorio")]
+        [EmailAddress(ErrorMessage ="{0} é Obrigatorio")]
         [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }
 
         [Display(Name = "Data Nacimento")]
+        [Required(ErrorMessage = "{0} é Obrigatorio")]
+        [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DiaNacimento { get; set; }
         [Display(Name = "Salario base")]
+        [Range(100.0, 50000.0, ErrorMessage = "{0} Limite do salario {1} a {2}")]
+        [Required(ErrorMessage = "{0} é Obrigatorio")]
         [DisplayFormat(DataFormatString = "R$ {0:F2}")]
         public double SalarioBase { get; set; }
         public int DepartamentoId { get; set; }
