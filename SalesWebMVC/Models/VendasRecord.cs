@@ -10,6 +10,8 @@ namespace SalesWebMVC.Models
         public DateTime Data { get; set; }
         public double Venda{ get; set; }
         public SaleStatus Status { get; set; }
+
+        public int VendedoresId { get; set; }
         public Vendedores Vendedores { get; set; }
 
 
