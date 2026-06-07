@@ -36,3 +36,47 @@ h1 {
 .botoes{
     text-align:end
 }
+
+
+.painel-departamento {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.painel-header {
+    background: #2c3e50 !important;
+    border: none;
+    padding: 15px 20px;
+}
+
+    .painel-header .panel-title {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+.painel-body {
+    padding: 0;
+    background: #fff;
+}
+
+.tabela-vendas {
+    margin-bottom: 0;
+}
+
+    .tabela-vendas thead tr {
+        background: #f4f6f9;
+    }
+
+    .tabela-vendas thead th {
+        color: #2c3e50;
+        font-weight: 600;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .tabela-vendas tbody tr:hover {
+        background: #eef5ff;
+    }

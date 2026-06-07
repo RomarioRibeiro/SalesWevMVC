@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Humanizer;
+using Microsoft.AspNetCore.Mvc;
 using SalesWebMVC.Services;
 
 namespace SalesWebMVC.Controllers
@@ -33,9 +34,21 @@ namespace SalesWebMVC.Controllers
             var result = await _vendasRecordService.FindByDataAsync(minData, maxData);
             return View(result);
         }
-        public IActionResult GroupBusca()
+        public async Task<IActionResult> GroupBusca(DateTime? minData, DateTime? maxData)
         {
-            return View();
+            if (!minData.HasValue)
+            {
+                minData = new DateTime(DateTime.Now.Year, 1, 1);
+            }
+            if (!maxData.HasValue)
+            {
+                maxData = DateTime.Now;
+            }
+
+            ViewData["minData"] = minData.Value.ToString("yyyy-MM-dd");
+            ViewData["maxData"] = maxData.Value.ToString("yyyy-MM-dd");
+            var result = await _vendasRecordService.FindByDataGroupAsync(minData, maxData);
+            return View(result);
         }
     }
 }
